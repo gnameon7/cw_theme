@@ -1,0 +1,54 @@
+#root {
+    #_contact {
+        &Window {
+            &Tab {
+                .floatTabSelect {
+                    background-color: theme-color('primary', 'base');
+                }
+            }
+            &List {
+                ._contactList {
+                    @include lightBaseBg;
+                }
+                .contactPanel {
+                    &__footer {
+                        background-color: theme-color('primary', 'dark');
+                    }
+                }
+                .contactButton {
+                    &__addContact {
+                        @include darkBg;
+                        @include lightText;
+                    }
+                }
+                .profileShowDialog {
+                    &__directRoomButton {
+                        @include darkBg;
+                        @include lightText;
+                    }
+                }
+            }
+        }
+    }
+    .contactPanel {
+        &__coverImageContainer {
+            @include darkBaseBg;
+        }
+        &__footer {
+            @include baseLightBg;
+        }
+        &__profileButton {
+            @include darkBaseBg;
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+    .joinLiveTooltip {
+        &__listItem {
+            &:hover {
+                @include lightBaseBg;
+            }
+        }
+    }
+}

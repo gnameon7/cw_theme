@@ -1,0 +1,68 @@
+#root {
+    .timelineLinkAppend {
+        background-color: theme-color('primary', 'base') !important;
+        border-color: theme-color('primary', 'base') !important;
+    }
+    #_timeLine {
+    }
+    .timeLine {
+        &__dateHead {
+            // background-color: theme-color('primary', 'base');
+            border-color: theme-color('primary', 'dark');
+            &Body {
+                background-color: theme-color('primary', 'base');
+                .icoFontClock {
+                    @include lightText;
+                }
+            }
+            &Text {
+                @include lightText;
+            }
+        }
+        &__unreadLineBody {
+            background-color: theme-color('secondary', 'light');
+        }
+    }
+    .timeline {
+        &:focus {
+            border-color: theme-color('primary', 'light');
+        }
+        &Message {
+            &.chatTimeLineMessageHover {
+                border-color: theme-color('primary', 'light');
+                @include opacityBg;
+            }
+            &--mention {
+                @include darkBaseBg;
+            }
+            &--border {
+                border-color: theme-color('primary', 'light');
+            }
+            &--jumpMessage {
+                @include fullDarkBg;
+            }
+            &--editing {
+                @include lightBaseBg;
+            }
+            &__editIcon {
+                @include lightText;
+            }
+            &__systemMessage {
+                @include darkBaseBg;
+            }
+            .actionNav {
+                @include darkBaseBg;
+                &__more,
+                &__item {
+                    @include lightText;
+                    &:hover {
+                        @include darkText;
+                    }
+                }
+            }
+            .icoFontInfo {
+                color: theme-color('secondary', 'light');
+            }
+        }
+    }
+}

@@ -1,0 +1,177 @@
+#root {
+    .cheatsheetKeySample {
+        background-color: theme-color('primary', 'dark');
+        color: theme-color('secondary', 'light');
+        svg {
+            @include lightText;
+        }
+    }
+    #_chat {
+        &FileAll {
+            @include lightText;
+        }
+        &Content {
+            @include baseBg;
+        }
+        &Send {
+            &Area {
+                background-color: theme-color('primary', 'dark');
+                .chatInput {
+                    border-color: theme-color('primary', 'base');
+                    &__submit {
+                        @include baseBg;
+                        @include lightText;
+                    }
+                }
+            }
+            &Toolbar {
+                @include darkBaseBg;
+            }
+            &Tool {
+                svg {
+                    @include lightText;
+                }
+            }
+        }
+        &Text {
+            @include lightText;
+            &Area {
+                background-color: theme-color('primary', 'dark');
+            }
+        }
+        &Room {
+            &Setting {
+                @include lightText;
+            }
+        }
+    }
+    .chat {
+        &Info {
+            @include darkBaseBg;
+            & > .title {
+                @include darkBaseBg;
+            }
+            &Task {
+                &Area {
+                    @include darkBaseBg;
+                }
+                &MetaArea {
+                    @include darkBaseBg;
+                }
+            }
+        }
+        &Code {
+            @include darkBaseBg;
+            @include lightText;
+        }
+        &Quote {
+            &__quoteIcon {
+                @include lightText;
+            }
+        }
+        &Category {
+            &ListBox {
+                @include darkBaseBg;
+                &__header {
+                    @include darkBaseBg;
+                }
+            }
+            &AddChatList {
+                &__moreRoomContainer {
+                    background-color: theme-color('primary', 'dark');
+                }
+            }
+        }
+        &RoomSettingDialog {
+            &__headerTabContainer {
+                background-color: theme-color('primary', 'dark');
+            }
+            &__headerTab {
+                border-color: theme-color('primary', 'base');
+                &Item {
+                    @include fullDarkBaseBg;
+                    &--selected {
+                        background-color: theme-color('primary', 'base');
+                    }
+                    &:hover {
+                        background-color: theme-color('primary', 'light');
+                    }
+                }
+            }
+        }
+        &SettingDialog {
+            &__headerTab {
+                border-color: theme-color('primary', 'base');
+                &Item {
+                    @include fullDarkBaseBg;
+                    &--selected {
+                        background-color: theme-color('primary', 'base');
+                    }
+                    &:hover {
+                        background-color: theme-color('primary', 'light');
+                    }
+                }
+            }
+        }
+        &Input {
+            &__toolList {
+                > ._showDescription {
+                    strong {
+                        @include lightText;
+                    }
+                }
+            }
+        }
+    }
+    .uiDropDown {
+        &__listContainer {
+            @include darkBaseBg;
+        }
+        &__listItem {
+            &:hover {
+                background-color: theme-color('primary', 'light');
+            }
+        }
+    }
+    .tooltip {
+        &--white {
+            @include darkBaseBg;
+        }
+        &__checkHandleAction {
+            color: theme-color('secondary', 'light');
+        }
+        &List {
+            &__item {
+                &:hover {
+                    background-color: theme-color('primary', 'light');
+                }
+            }
+        }
+    }
+    .replyMessageTooltip {
+        &__footer {
+            @include baseLightBg;
+        }
+        &__moveButton {
+            @include darkBaseBg;
+        }
+    }
+    .toSelectorTooltip {
+        &__footer {
+            @include darkBaseBg;
+        }
+        &__checkAll {
+            @include lightText;
+        }
+    }
+    .emoticonTooltip {
+        &__footer {
+            @include darkBaseBg;
+        }
+        &__emoticonContainer {
+            &:hover {
+                @include lightBaseBg;
+            }
+        }
+    }
+}

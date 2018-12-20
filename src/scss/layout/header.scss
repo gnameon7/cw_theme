@@ -1,0 +1,53 @@
+#root {
+    #_globalHeader {
+        background-color: theme-color('primary', 'base');
+        .globalHeader__navigation {
+            svg {
+                @include lightText;
+            }
+        }
+    }
+    #_headerSearch {
+        .search {
+            background-color: theme-color('primary', 'dark');
+            .icSearch {
+                @include darkBg;
+            }
+            input[type="text"] {
+                background-color: theme-color('primary', 'dark');
+                @include lightText;
+            }
+        }
+    }
+    #_my {
+        &Status {
+            &Button {
+                @include darkBg;
+            }
+            &Box {
+                background-color: theme-color('primary', 'dark');
+                .myAccountMenu__anchor {
+                    color: theme-color('secondary', 'light');
+                    &:hover {
+                        background-color: theme-color('primary', 'light');
+                    }
+                }
+            }
+        }
+    }
+    .globalHeaderInformation {
+        &.helpMenuSelected {
+            background-color: theme-color('primary', 'dark');
+        }
+    }
+    #_informationBox {
+        background-color: theme-color('primary', 'dark');
+        .helpMenuItem {
+            &__anchor {
+                &:hover {
+                    background-color: theme-color('primary', 'base');
+                }
+            }
+        }
+    }
+}

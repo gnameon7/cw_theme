@@ -1,0 +1,134 @@
+
+body {
+    .tooltip {
+        &--white {
+            &:not(.datePicker) {
+                color: theme-color('secondary', 'light');
+                @include darkBaseBg;
+            }
+        }
+        &Triangle {
+            &--whiteBottom {
+                border-top-color: theme-color('primary', 'dark');
+                &:after {
+                    border-top-color: theme-color('primary', 'dark');
+                }
+            }
+        }
+    }
+    .dropDownTooltip {
+        &__item {
+            &:hover {
+                background-color: theme-color('primary', 'light');
+            }
+        }
+    }
+    .dialogBase {
+        background: rgba(0, 0, 0, 0.5);
+        .dialogContainer {
+            @include darkBg;
+            pre {
+                color: theme-color('secondary', 'light');
+            }
+            &__footer {
+                background-color: theme-color('primary', 'fulldark');
+                border-color: theme-color('primary', 'fulldark');
+                .button {
+                    @include lightBg;
+                    @include lightText;
+                    &:hover {
+                        opacity: 0.7;
+                    }
+                    &.btnDanger {
+                        border-color: #ec1c13;
+                        background-color: #ec1c13;
+                    }
+                }
+            }
+        }
+    }
+    .confirmDeleteDialog {
+        color: theme-color('secondary', 'light')
+    }
+    .datePicker {
+        &__header {
+            
+        }
+    }
+    ._cwABMoreListBox {    
+        .moreActionTooltip {
+            &__item {
+                @include lightText;
+                &:hover {
+                    @include lightBaseBg;
+                }
+            }
+        }
+    }
+}
+#root {
+    pre {
+        color: theme-color('secondary', 'light');
+    }
+    a {
+        color: theme-color('secondary', 'dark');
+    }
+    div {
+        color: theme-color('secondary', 'light');
+    }
+    textarea, select, input[type="search"], input[type="text"], input[type="date"], input[type="email"] {
+        color: theme-color('secondary', 'light');
+        @include darkBaseBg;
+    }
+    #_wrapper {
+        background-color: theme-color('primary', 'base');
+    }
+    .button {
+        @include lightText;
+        @include lightBg;
+        &:hover {
+            opacity: 0.7 !important;
+        }
+    }
+    .codePreview {
+        background-color: theme-color('primary', 'dark');
+    }
+    .btn {
+        &Primary {
+            @include lightText;
+            @include darkBg;
+            &:hover {
+                opacity: 0.7 !important;
+            }
+        }
+    }
+    .formControlArea {
+        @include darkBaseBg;
+    }
+    #_mainContentExpand {
+        &Left {
+            background-color: theme-color('primary', 'dark');
+            svg {
+                @include lightText;
+            }
+        }
+        &Right {
+            background-color: theme-color('primary', 'dark');
+            svg {
+                @include lightText;
+            }
+        }
+    }
+    .floatWindow {
+        // background-color: theme-color('primary', 'dark');
+        background-color: rgba(0, 0, 0, 0.5);
+        border-color: theme-color('primary', 'base');
+    }
+    .selectboxContent {
+        li {
+            &:hover {
+                background-color: theme-color('primary', 'light');
+            }
+        }
+    }
+}

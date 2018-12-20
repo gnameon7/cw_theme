@@ -1,0 +1,44 @@
+#root {
+    .profile {
+        &ShowDialog {
+            &__editProfileButton {
+                @include darkBaseBg;
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+            &__directRoomButton {
+                @include darkBaseBg;
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+        &EditDialog {
+            &__privacySeetingIcon {
+                @include lightText;
+            }
+            &__privacyBoxDrawer {
+                @include lightText;
+            }
+        }
+        &CoverUpload {
+            &__footer {
+                background-color: theme-color('primary', 'fulldark');
+            }
+            &__selectButton {
+                @include baseLightBg;
+                @include lightText;
+            }
+        }
+        &AvatarUploadTooltip {
+            &__footer {
+                background-color: theme-color('primary', 'fulldark');
+            }
+            &__selectButton {
+                @include baseLightBg;
+                @include lightText;
+            }
+        }
+    }
+}

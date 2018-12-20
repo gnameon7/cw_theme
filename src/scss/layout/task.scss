@@ -1,0 +1,140 @@
+#root {
+    #_task {
+        &AddArea {
+            background-color: theme-color('primary', 'light');
+            .addTaskContainer {
+                &__assigneeLabel {
+                    @include darkText;
+                }
+                &__assigneeAddButtonIcon {
+                    @include lightText;
+                }
+                &__limitSelectButtonIcon {
+                    @include lightText;
+                }
+                &__submitButton {
+                    &--enable {
+                        @include darkBaseBg;
+                    }
+                }
+                &__cancelButton {
+                    @include lightBaseBg;
+                }
+                &__limitLabel {
+                    @include darkText;
+                }
+            }
+            .addTaskAssignPiece {
+                background-color: theme-color('primary', 'dark');
+                &__removeButton {
+                    border-color: theme-color('primary', 'base');
+                    &Icon {
+                        @include lightText;
+                    }
+                }
+            }
+            .datePickerLabelPiece {
+                background-color: theme-color('primary', 'dark');
+                &__removeButton {
+                    border-color: theme-color('primary', 'base');
+                    &Icon {
+                        @include lightText;
+                    }
+                }
+            }
+        }
+        &NameInput {
+            background-color: theme-color('primary', 'base');
+            border-color: theme-color('primary', 'dark');
+            @include lightText;
+            &::-webkit-input-placeholder {
+                @include darkText;
+            }
+        }
+        &WindowList {
+            ._taskList {
+                @include lightBaseBg;
+            }
+        }
+        &WindowViewType {
+            .button {
+                &.selected {
+                    background: theme-color('primary', 'dark');
+                }
+                &:hover {
+                    background: theme-color('primary', 'light');
+                }
+            }
+        }
+        &WindowFilter {
+            .button {
+                &.selected {
+                    background: theme-color('primary', 'dark');
+                }
+                &:hover {
+                    background: theme-color('primary', 'light');
+                }
+            }
+        }
+        &DetailArea {
+            .taskDetail {
+                &Header {
+                    @include darkBaseBg;
+                    &__closeButtonIcon {
+                        @include lightText;
+                    }
+                }
+                &ChatTlArea {
+                    @include lightBaseBg;
+                    .taskDetailChatTitle {
+                        @include lightBaseBg;
+                        background: theme-color('primary', 'base');
+                    }
+                }
+            }
+        }
+        &Edit {
+            &Incharge {
+                .assignMember {
+                    background-color: theme-color('primary', 'light');
+                    border-color: theme-color('primary', 'base');
+                    box-shadow: 0 1px 0 0 theme-color('primary', 'dark');
+                    text-shadow: 0 1px 0 theme-color('secondary', 'dark');
+                }
+            }
+            &LimitLabel {
+                .datePickerLabelPiece {
+                    background-color: theme-color('primary', 'light');
+                    &__removeButton {
+                        border-color: theme-color('primary', 'base');
+                        svg {
+                            @include lightText;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .task {
+        &ListItem {
+            @include lightBaseBg;
+            &:hover {
+                .taskListItem__actionButtonContainer {
+                    background-color: theme-color('primary', 'dark');
+                }
+            }
+            &__actionIcon {
+                @include lightText;
+            }
+        }
+    }
+    .addTaskContainer {
+        &__submitButton {
+            &--disable {
+                @include darkBaseBg;
+                @include lightText;
+                opacity: 0.3;
+            }
+        }
+    }
+}

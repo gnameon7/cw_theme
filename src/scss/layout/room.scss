@@ -1,0 +1,158 @@
+#root {
+    #_sideContentMenu__header {
+        .room {
+            &ListHeader {
+                &__roomFilterListDropDownLabel {
+                    @include lightText;
+                    background-color: theme-color('primary', 'base');
+                    &:hover {
+                        background-color: theme-color('primary', 'light');
+                    }
+                }
+            }
+        }
+    }
+    #_room {
+        &Header {
+            @include darkBaseBg;
+        }
+        &ListArea {
+            .room {
+            }
+        }
+        &Title {
+            @include lightText;
+        }
+        &FileListTip {
+            @include darkBaseBg;
+        }
+    }
+    .room {
+        &ListItem {
+            background-color: theme-color('primary', 'base');
+            &__roomName {
+                color: theme-color('secondary', 'light');
+            }
+            &:hover {
+                background-color: theme-color('primary', 'dark');
+            }
+            &--selected {
+                background-color: theme-color('primary', 'dark');
+            }
+            &__roomName {
+                @include lightText;
+            }
+        }
+        &LimitOver {
+            &__text {
+                @include lightText;
+            }
+            &__moreLoadButton {
+                @include baseBg;
+                @include lightText;
+            }
+        }
+        &FilterListTooltip {
+            &__roomStatusTypeList {
+                border-color: theme-color('primary', 'light');
+                &__categoryAddIcon {
+                    @include lightText;
+                }
+            }
+            &__categoryAddIcon {
+                @include lightText;
+            }
+            &__listRoomItem {
+                color: theme-color('secondary', 'light');
+                &:hover {
+                    background-color: theme-color('primary', 'base');
+                }
+                &--selected {
+                    background-color: theme-color('primary', 'light');
+                }
+            }
+            &__listItem {
+                color: theme-color('secondary', 'light');
+                &:hover {
+                    background-color: theme-color('primary', 'base');
+                }
+                &--selected {
+                    background-color: theme-color('primary', 'light');
+                }
+            }
+            &__categoryAction {
+                svg {
+                    @include lightText;
+                }
+            }
+        }
+        &Task {
+            &__header {
+                background-color: theme-color('primary', 'dark');
+                &Text {
+                    @include lightText;
+                }
+            }
+        }
+        &File {
+            &ListTooltip {
+                .tooltipList {
+                    &FileItem {
+                        &__buttonContainer {
+                            background-color: theme-color('primary', 'light');
+                        }
+                        svg {
+                            @include lightText;
+                        }
+                    }
+                    &__item {
+                        border-color: theme-color('primary', 'base');
+                        &--selected {
+                            background-color: theme-color('primary', 'light');
+                        }
+                    }
+                }
+            }
+            &DetailTooltip {
+                &__filePreview {
+                    @include baseDarkBg;
+                }
+            }
+        }
+        &Description {
+            &__inviteButton {
+                @include darkBaseBg;
+            }
+            &__inviteButtonIcon {
+                @include lightText;
+            }
+        }
+        &Member {
+            &Table {
+                &__deleteIcon {
+                    @include lightText;
+                }
+            }
+            &Select {
+                &__memberSelect {
+                    &TableContainer {
+                        @include darkBaseBg;
+                    }
+                    &TableHeader {
+                        border-color: theme-color('primary', 'base');
+                    }
+                }
+            }
+        }
+        &PermissionSettingDialog {
+            &__title {
+                color: theme-color('secondary', 'light');
+            }
+        }
+    }
+    .invitationLinkAdvancedSettingComponent {
+        &__title {
+            color: theme-color('secondary', 'light');
+        }
+    }
+}

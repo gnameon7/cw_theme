@@ -1,0 +1,54 @@
+#root {
+    .searchResult {
+        @include darkBaseBg;
+        &__footer {
+            background-color: theme-color('primary', 'fulldark');
+            border-color: theme-color('primary', 'base');
+        }
+        &__searchIcon {
+            @include lightText;
+        }
+        &__chatList {
+            & > li {
+                background-color: theme-color('primary', 'dark');
+                &:hover {
+                    background-color: theme-color('primary', 'light');
+                }
+                & + li {
+                    border-color: theme-color('primary', 'base');
+                }
+            }
+        }
+        &Title {
+            @include darkBaseBg;
+            &__icon {
+                @include lightText;
+            }
+        }
+    }
+    .messageSearchContent {
+        &__speakerOptionButton {
+            @include darkBaseBg;
+            &Icon {
+                @include lightText;
+            }
+        }
+    }
+    .selectbox {
+        &Default {
+            @include darkBaseBg;
+            &__icon {
+                @include lightText;
+            }
+        }
+        &Content {
+            @include darkBaseBg;
+            .selectboxSelected {
+                background-color: theme-color('primary', 'base');
+                &:hover {
+                    background-color: theme-color('primary', 'light');
+                }
+            }
+        }
+    }
+}

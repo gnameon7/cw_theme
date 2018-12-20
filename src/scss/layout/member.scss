@@ -1,0 +1,72 @@
+#root {
+    #_memberDetailContent {
+        .memberDetailContent {
+            &__memberLabel {
+                @include lightText;
+            }
+        }
+    }
+    .contactInvite {
+        &MailLabel {
+            color: theme-color('secondary', 'dark');
+        }
+        &MailList {
+            &__cancelButtonIcon {
+                @include lightText;
+            }
+        }
+    }
+    .memberAddition {
+        &__tableContainer {
+            @include darkBaseBg;
+        }
+        &__tableHeader {
+            border-color: theme-color('primary', 'base');
+        }
+        &__tableFooter {
+            @include fullDarkBaseBg;
+        }
+        &__contactFilter {
+        }
+    }
+    .memberEdit {
+        &__memberTableContainer {
+            @include darkBaseBg;
+        }
+        &__memberTableFooter {
+            @include fullDarkBaseBg;
+        }
+        &__deleteIcon {
+            @include lightText;
+        }
+    }
+    .roomMemberTable {
+        border-color: theme-color('primary', 'base');
+        &:hover {
+            background-color: theme-color('primary', 'light');
+        }        
+    }
+    .invitationLinkDisplayComponent {
+        &__copyButton {
+            @include darkBaseBg;
+        }
+        &__editButtonIcon {
+            @include lightText;
+        }
+    }
+    .linkStatus {
+        color: theme-color('secondary', 'light');
+    }
+    .assignMember {
+        @include baseLightBg;
+        @include lightText;
+    }
+    .assignContent {
+        .assignContentCancel {
+            border-color: theme-color('primary', 'dark');
+            &__icon {
+                @include lightText;
+            }
+        }
+    }
+}

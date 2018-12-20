@@ -1,0 +1,47 @@
+#root {
+    #_side {
+        &ChatMoveMyChat {
+            @include lightText;
+        }
+        &Content {
+            background-color: theme-color('primary', 'dark');
+            &Menu {
+                &__header {
+                    @include darkBaseBg;
+                }
+            }
+        }
+    }
+    #_uiDropDown {
+        svg {
+            @include lightText;
+        }
+    }
+    #_sub {
+        &Content {
+    
+        }
+        &Room {
+            &InfoTitle {
+                background-color: theme-color('primary', 'dark');
+                .roomDescription {
+                    &__headerText {
+                        @include lightText;
+                    }
+                    &__inviteButton {
+                        @include baseBg;    
+                    }
+                }
+            }
+            &DescriptionWrapper {
+                // background-color: theme-color('primary', 'dark');
+                &:hover {
+                    background-color: theme-color('primary', 'light');
+                }
+            }
+        }
+        &EditRoomInfo {
+            @include lightText;
+        }
+    }
+}

@@ -1,0 +1,135 @@
+#root {
+    ._cwDGBase {
+        .dialogContainer {
+            @include baseDarkBg;
+            &__header {
+                @include baseLightBg;
+            }
+            &__footer {
+                @include baseLightBg;
+            }
+            &__closeButtonIcon {
+                @include lightText;
+            }
+        }
+    }
+    ._cwFWBase {
+        .floatWindow {
+            &__header {
+                @include baseDarkBg;
+            }
+            &__closeButtonIcon {
+                @include lightText;
+            }
+        }
+    }
+    ._cwFW {
+        &Inner {
+            @include baseDarkBg;
+        }
+        &Header {
+            @include darkBaseBg;
+            .floatHeaderTab {
+                @include darkBaseBg;
+                > ul {
+                    border-color: theme-color('primary', 'base');
+                    > li {
+                        @include fullDarkBaseBg;
+                        &:hover {
+                            background-color: theme-color('primary', 'light');
+                        }
+                    }
+                }
+            }
+            .taskWindowContainer {
+                &__headerTab {
+                    @include darkBaseBg;
+                    &Container {
+                        @include darkBaseBg;
+                    }
+                    &Item {
+                        @include fullDarkBaseBg;
+                        &.floatTabSelect {
+                            background-color: theme-color('primary', 'base');
+                        }
+                        &:hover {
+                            background-color: theme-color('primary', 'light');
+                        }
+                    }
+                }
+                .floatTabSelect {
+                    background-color: theme-color('primary', 'light');
+                }
+            }
+            .taskWindowHeaderNavigationContainer {
+                @include baseBg;
+            }
+        }
+        &Footer {
+            @include baseDarkBg;
+            background: theme-color('primary', 'base');
+        }
+        &Content {
+            .admin {
+                &AllListArea {
+                    background-color: theme-color('primary', 'base');
+                }
+                &DetailArea {
+                    @include baseDarkBg;
+                }
+            }
+            .file {
+                &DetailHeader {
+                    @include baseDarkBg;
+                    &__closeButtonIcon {
+                        @include lightText;
+                    }
+                }
+                &AllListContentArea {
+                    &__listItem {
+                        @include baseLightBg;
+                        &.adminDetailSelected {
+                            @include darkBaseBg;
+                        }
+                    }
+                    &__buttonContainer {
+                        background-color: theme-color('primary', 'base');
+                        .button {
+                            background-color: theme-color('primary', 'dark');
+                        }
+                    }
+                }
+            }
+            ._taskList {
+                &:hover {
+                    .taskActions {
+                        background-color: theme-color('primary', 'dark');
+                    }    
+                }
+                .taskActions {
+                    &__icon {
+                        @include lightText;
+                    }
+                }
+            }
+            .searchResultListBox {
+                @include baseLightBg;
+            }
+        }
+        .floatWindow {
+            &__closeButtonIcon {
+                @include lightText;
+            }
+        }
+    }
+    .search {
+        @include darkBaseBg;
+        .icSearch {
+            @include lightText;
+        }
+        input {
+            background-color: theme-color('primary', 'dark');
+            @include lightText;
+        }
+    }
+}

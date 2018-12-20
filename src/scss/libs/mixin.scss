@@ -1,0 +1,53 @@
+@mixin lightText {
+    color: theme-color('secondary', 'light');
+    fill: theme-color('secondary', 'light');
+}
+@mixin darkText {
+    color: theme-color('secondary', 'dark');
+    fill: theme-color('secondary', 'dark');
+}
+@mixin lightBg {
+    background-color: theme-color('primary', 'light');
+    border-color: theme-color('primary', 'light');
+}
+@mixin lightBaseBg {
+    background-color: theme-color('primary', 'light');
+    border-color: theme-color('primary', 'base');
+}
+@mixin baseBg {
+    background-color: theme-color('primary', 'base');
+    border-color: theme-color('primary', 'base');
+}
+@mixin baseLightBg {
+    background-color: theme-color('primary', 'base');
+    border-color: theme-color('primary', 'light');
+}
+@mixin baseDarkBg {
+    background-color: theme-color('primary', 'base');
+    border-color: theme-color('primary', 'dark');
+}
+@mixin darkBg {
+    background-color: theme-color('primary', 'dark');
+    border-color: theme-color('primary', 'dark');
+}
+@mixin darkBaseBg {
+    background-color: theme-color('primary', 'dark');
+    border-color: theme-color('primary', 'base');
+}
+@mixin fullDarkBg {
+    background-color: theme-color('primary', 'fulldark');
+    border-color: theme-color('primary', 'fulldark');
+}
+@mixin fullDarkBaseBg {
+    background-color: theme-color('primary', 'fulldark');
+    border-color: theme-color('primary', 'base');
+}
+
+@mixin opacityBg {
+    background-color: rgba(theme-color('primary', 'fulldark'), 0.2);
+}
+
+@function theme-color($key: 'primary', $variant: 'base') {
+    $map: map-get($theme-colors, $key);
+    @return map-get($map, $variant);
+}
