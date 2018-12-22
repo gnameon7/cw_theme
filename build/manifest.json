@@ -1,7 +1,7 @@
 {
     "name": "MrCK - Chatwork Dark theme",
     "short_name": "CW Dark",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "manifest_version": 2,
     "description": "Chatwork Dark theme",
     "content_scripts": [{

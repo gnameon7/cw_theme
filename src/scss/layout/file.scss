@@ -1,0 +1,20 @@
+#root {
+    .fileDropZone {    
+        background-color: theme-color('primary', 'base') !important;
+        border-color: theme-color('primary', 'dark') !important;
+    }
+    .uploadFileDialog {
+        &__toolbar {
+            @include darkBaseBg;
+        }
+        &__emoticonIcon {
+            @include lightText;
+        }
+        &__mention {
+            @include lightText;
+            &:hover {
+                @include darkText;
+            }
+        }
+    }
+}
